@@ -1,0 +1,14 @@
+digraph G {
+"world" -> "base_link"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 39.293 sec old)\nBuffer length: 0.000 sec\n"];
+"base_link" -> "base"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 39.293 sec old)\nBuffer length: 0.000 sec\n"];
+"link_6_t" -> "tool0"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 39.293 sec old)\nBuffer length: 0.000 sec\n"];
+"tool0" -> "camera_rgb_frame"[label="Broadcaster: /my_tf_broadcaster\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 39.293 sec old)\nBuffer length: 0.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 39.293"[ shape=plaintext ] ;
+ }->"world";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 39.293"[ shape=plaintext ] ;
+ }->"link_6_t";
+}
